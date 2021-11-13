@@ -12,5 +12,9 @@ namespace MarsRover.Controllers
         {
             return View();
         }
+        public IActionResult GetData()
+        {
+            return View();
+        }
     }
 }
