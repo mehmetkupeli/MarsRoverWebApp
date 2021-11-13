@@ -4,27 +4,27 @@
             <div class="col-md-12">
                 <form asp-action="GetData" asp-controller="Rover" method="post">
                     <div class="input-group">
-                        <span class="input-group-text">GROUND VALUES X and Y</span>
+                        <span class="input-group-text">Ground values X and Y</span>
                         <input type="text" class="form-control" name="GroundX">
                         <input type="text" class="form-control" name="GroundY">
                     </div>
                     <br />
                     <div class="input-group">
-                        <span class="input-group-text">Rotation VALUES X and Y</span>
+                        <span class="input-group-text">Rover rotation values X and Y</span>
                         <input type="text" class="form-control" name="PositionX">
                         <input type="text" class="form-control" name="PositionY">
                     </div>
                     <br />
                     <div class="input-group">
-                        <span class="input-group-text">Rover Direction and Command</span>
-                        <input type="text" class="form-control" name="Direction" placeholder="N = 1 E = 2 S = 3 W = 4 input integer :">
+                        <span class="input-group-text">Rover Direction  and  Command</span>
+                        <input type="text" class="form-control" name="Direction" placeholder="Input integer : N = 1 E = 2 S = 3 W = 4 ">
                         <input type="text" class="form-control" name="Command">
                     </div>
                     <br />
-                    <button class="btn btn-success">Gönder</button>
+                    <button class="btn btn-success">Send</button>
 
                     <div class="form-group">
-                        <label for="comment">Sonuç:</label>
+                        <label for="comment">Results</label>
                         <textarea class="form-control" rows="3">@TempData["Data"]</textarea>
                     </div>
                 </form>
